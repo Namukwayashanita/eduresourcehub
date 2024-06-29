@@ -26,41 +26,47 @@
 </head>
 
 <body id="top">
-  <!-- HEADER -->
-  <header class="header" data-header>
-    <div class="container">
-      <h1><a href="#" class="logo">EduHub</a></h1>
-      <nav class="navbar" data-navbar>
-        <div class="navbar-top">
-          <a href="#" class="logo">EduHub</a>
-          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
+    <!-- HEADER -->
+    <header class="header" data-header>
+        <div class="container">
+          <h1><a href="#" class="logo">Eduhub</a></h1>
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">Eduhub</a>
+              <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+            <ul class="navbar-list">
+              <li class="navbar-item"><a href="#home" class="navbar-link" data-nav-toggler>Home</a></li>
+              <li class="navbar-item"><a href="about.html" class="navbar-link" data-nav-toggler>About</a></li>
+              <li class="navbar-item"><a href="#courses" class="navbar-link" data-nav-toggler>Courses</a></li>
+              <li class="navbar-item"><a href="#event" class="navbar-link" data-nav-toggler>Event</a></li>
+              <li class="navbar-item"><a href="#" class="navbar-link" data-nav-toggler>Blog</a></li>
+              <li class="navbar-item"><a href="#" class="navbar-link" data-nav-toggler>Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <div class="dropdown">
+                <button class="header-action-btn login-btn dropbtn">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">Login</span>
+                </button>
+                <div class="dropdown-content">
+                  <a href="user-login-register.html">Learner</a>
+                  <a href="login-register-instructor.html">Instructor</a>
+                </div>
+              </div>
+            <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
-        <ul class="navbar-list">
-          <li class="navbar-item"><a href="#home" class="navbar-link" data-nav-toggler>Home</a></li>
-          <li class="navbar-item"><a href="about.html" class="navbar-link" data-nav-toggler>About</a></li>
-          <li class="navbar-item"><a href="#courses" class="navbar-link" data-nav-toggler>Courses</a></li>
-          <li class="navbar-item"><a href="#event" class="navbar-link" data-nav-toggler>Event</a></li>
-          <li class="navbar-item"><a href="#" class="navbar-link" data-nav-toggler>Blog</a></li>
-          <li class="navbar-item"><a href="#" class="navbar-link" data-nav-toggler>Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-        <a href="login-register.html" class="header-action-btn login-btn">
-          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-          <span class="span">Login / Register</span>
-        </a>
-        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-      </div>
-      <div class="overlay" data-nav-toggler data-overlay></div>
-    </div>
-  </header>
+      </header>
 
   <!-- SEARCH BOX -->
   <div class="search-container" data-search-box>
@@ -88,10 +94,10 @@
 
             <p class="section-subtitle">Welcome</p>
 
-            <h2 class="h1 hero-title">Learner login</h2>
+            <h2 class="h1 hero-title">Instructor login</h2>
 
             <p class="hero-text">
-              We prioritize inclusivity, equitable access, and quality education, integrating features to address literacy, numeracy and gender disparities
+                At EduHub, we are committed to supporting educators in creating impactful learning experiences. Our platform provides a wealth of resources and tools to help you deliver excellence in education.
             </p>
 
           </div>
@@ -100,7 +106,7 @@
   
   
       <div class="form-container">
-        <h3 class="form-title">Learner-Login</h3>
+        <h3 class="form-title">Instructor-Login</h3>
         <form action="#" method="post" class="contact-form">
           <div class="form-group">
             <label for="login-email">Email</label>
@@ -120,7 +126,7 @@
       </div>
 
       <div class="form-container" style="display: none;" id="register-form">
-        <h3 class="form-title">Learner-Register</h3>
+        <h3 class="form-title">Instructor-Register</h3>
         <form action="#" method="post" class="contact-form">
           <div class="form-group">
             <label for="register-name">Name</label>
@@ -147,231 +153,200 @@
 
 
 
- <!-- FOOTER -->
- <footer>
-
+  <!-- FOOTER -->
+  <footer>
     <footer class="footer">
-      <div class="container">
-  
-        <div class="footer-top">
-  
-          <div class="footer-brand">
-  
-            <a href="#" class="logo">EduHub</a>
-  
-            <p class="section-text">
-              It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its
-              layout. The point of using Lorem Ipsum.
-            </p>
-  
-            <ul class="social-list">
-  
+        <div class="container">
+    
+          <div class="footer-top">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">EduHub</a>
+    
+              <p class="section-text">
+                It  is a repository for educational materials, supporting user uploads and personalized learning paths and a centralized platform for organizing and sharing educational resources
+              </p>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
               <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
+                <p class="footer-list-title">Explore</p>
+              </li>
+    
+              <li>
+                <a href="about.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">About Us</span>
                 </a>
               </li>
-  
+    
               <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                <a href="blog.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">Upcoming Events</span>
                 </a>
               </li>
-  
+    
               <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
+                <a href="blog.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">Blog & News</span>
                 </a>
               </li>
-  
+    
               <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-pinterest"></ion-icon>
+                <a href="faq.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">FAQ Question</span>
                 </a>
               </li>
-  
+    
+              <li>
+                <a href="privacy-policy.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">Privacy Policy</span>
+                </a>
+              </li>
+    
             </ul>
-  
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Useful Links</p>
+              </li>
+    
+              <li>
+                <a href="contact.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">Contact Us</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="faq.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">FAQ</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="service.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">Popular Courses</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="terms.html" class="footer-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+    
+                  <span class="span">Terms & Conditions</span>
+                </a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Contact Info</p>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+    
+                <address class="footer-link">
+                  Makerere unversity Kampala-Uganda
+                </address>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+    
+                <a href="tel:+256751235534" class="footer-link">+256 751235534</a>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+    
+                <a href="tel:+256 785295914" class="footer-link">+256 785295914</a>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+    
+                <a href="mailto:contact@eduhub.com" class="footer-link">contact@eduhub.com</a>
+              </li>
+    
+            </ul>
+    
           </div>
-  
-          <ul class="footer-list">
-  
-            <li>
-              <p class="footer-list-title">Explore</p>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">About Us</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Upcoming Events</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Blog & News</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">FAQ Question</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Testimonial</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="privacy-policy.html" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Privacy Policy</span>
-              </a>
-            </li>
-  
-          </ul>
-  
-          <ul class="footer-list">
-  
-            <li>
-              <p class="footer-list-title">Useful Links</p>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Contact Us</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Pricing Plan</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Instructor Profile</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">FAQ</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="service.html" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Popular Courses</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="terms.html" class="footer-link">
-                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-  
-                <span class="span">Terms & Conditions</span>
-              </a>
-            </li>
-  
-          </ul>
-  
-          <ul class="footer-list">
-  
-            <li>
-              <p class="footer-list-title">Contact Info</p>
-            </li>
-  
-            <li class="footer-item">
-              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-  
-              <address class="footer-link">
-                275 Quadra Street Victoria Road, New York
-              </address>
-            </li>
-  
-            <li class="footer-item">
-              <ion-icon name="call" aria-hidden="true"></ion-icon>
-  
-              <a href="tel:+13647657839" class="footer-link">+ 1 (364) 765-7839</a>
-            </li>
-  
-            <li class="footer-item">
-              <ion-icon name="call" aria-hidden="true"></ion-icon>
-  
-              <a href="tel:+13647657840" class="footer-link">+ 1 (364) 765-7840</a>
-            </li>
-  
-            <li class="footer-item">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-  
-              <a href="mailto:contact@EduHub.com" class="footer-link">contact@EduHub.com</a>
-            </li>
-  
-          </ul>
-  
+    
+          <div class="footer-bottom">
+            <p class="copyright">
+              Copyright 2024 EduHub. All Rights Reserved by <a href="contact.html" class="copyright-link">Me Technologies</a>
+            </p>
+          </div>
+    
         </div>
-  
-        <div class="footer-bottom">
-          <p class="copyright">
-            Copyright 2022 EduHub. All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
-          </p>
-        </div>
-  
-      </div>
-    </footer>
-  
-  
-  
-  
-  
-    <!-- 
-      - #BACK TO TOP
-    -->
-  
-    <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
-      <ion-icon name="arrow-up"></ion-icon>
-    </a>
-  
-    </footer>
-  
-    <!-- Custom JS link -->
-    <script src="./assets/js/script.js"></script>
-  
-    <!-- ionicon link -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
-  
-  </html>
+      </footer>
+    
+    
+    
+    
+    
+      <!-- 
+        - #BACK TO TOP
+      -->
+    
+      <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+        <ion-icon name="arrow-up"></ion-icon>
+      </a>
+  </footer>
+<!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

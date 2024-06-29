@@ -87,3 +87,13 @@ function toggleForm() {
     registerForm.style.display = "block";
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const faqs = document.querySelectorAll('.faq-question');
+  faqs.forEach(faq => {
+    faq.addEventListener('click', function () {
+      this.nextElementSibling.classList.toggle('show');
+      this.classList.toggle('active');
+    });
+  });
+});
