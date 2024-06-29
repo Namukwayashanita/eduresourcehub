@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduHome - Education Is About Academic Excellence</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)">
+
+  <!-- Inline CSS for Terms and Conditions Page -->
+  <style>
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .terms-content {
+      line-height: 1.6;
+    }
+
+    .terms-content h2 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .terms-content p {
+      margin-bottom: 10px;
+    }
+
+    .terms-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body id="top">
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1><a href="#" class="logo">EduHome</a></h1>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">EduHome</a>
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="index.html" class="navbar-link" data-nav-toggler>Home</a></li>
+            <li class="navbar-item"><a href="about.html" class="navbar-link" data-nav-toggler>About</a></li>
+            <li class="navbar-item"><a href="service.html" class="navbar-link" data-nav-toggler>Courses</a></li>
+            <li class="navbar-item"><a href="blog.html" class="navbar-link" data-nav-toggler>Event</a></li>
+            <li class="navbar-item"><a href="blog.html" class="navbar-link" data-nav-toggler>Blog</a></li>
+            <li class="navbar-item"><a href="contact.html" class="navbar-link" data-nav-toggler>Contact</a></li>
+          </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <div class="dropdown">
+            <button class="header-action-btn login-btn dropbtn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Login</span>
+            </button>
+            <div class="dropdown-content">
+              <a href="user-login-register.html">Learner</a>
+              <a href="login-register-instructor.html">Instructor</a>
+            </div>
+          </div>
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <!-- Search Box -->
+  <div class="search-container" data-search-box>
+    <div class="container">
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field">
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+    <div class="container">
+      <div class="hero-content">
+        <p class="section-subtitle">Better Learning Future With Us</p>
+        <h2 class="h1 hero-title">Terms and Conditions</h2>
+        <p class="hero-text">Welcome to EduHome. These terms and conditions outline the rules and regulations for the use of our website and services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terms and Conditions Section -->
+  <section class="terms-and-conditions">
+    <div class="container">
+      <div class="terms-content">
+        <h2>1. Introduction</h2>
+        <p>EDucRESOURCE HUB is a self-contained product developed as a web-based application using Oracle APEX. It serves as a repository for educational materials, supporting user uploads and personalized learning paths. The platform aims to provide a centralized system for organizing and sharing educational resources, prioritizing inclusivity, equitable access, and quality education. By using our website and services, you agree to comply with these terms and conditions.</p>
+
+        <h2>2. User Accounts</h2>
+        <p>To access certain features of EDucRESOURCE HUB, you may be required to create an account. When creating an account, you agree to provide accurate and complete information. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+
+        <h2>3. User-Generated Content</h2>
+        <p>Users may upload educational materials to EDucRESOURCE HUB. By uploading content, you grant us a non-exclusive, royalty-free, worldwide license to use, distribute, and display the content on our platform. You retain ownership of all intellectual property rights in your content.</p>
+
+        <h2>4. External Authentication Services</h2>
+        <p>EDucRESOURCE HUB integrates with external authentication services like Google and Microsoft. By using these services to log in, you agree to comply with their respective terms and conditions.</p>
+
+        <h2>5. Use of APIs</h2>
+        <p>Our platform may utilize APIs from various content providers to enhance the user experience. We are not responsible for the content provided by these external sources and cannot guarantee its accuracy or completeness.</p>
+
+        <h2>6. Privacy Policy</h2>
+        <p>We value your privacy. Our <a href="privacy-policy.html">Privacy Policy</a> outlines how we collect, use, and protect your personal information. By using EDucRESOURCE HUB, you consent to the practices described in our Privacy Policy.</p>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>EDucRESOURCE HUB is provided "as is" and "as available" without warranties of any kind. We do not warrant that the platform will be uninterrupted, error-free, or free of viruses or other harmful components. In no event shall we be liable for any damages arising from the use of our platform.</p>
+
+        <h2>8. Changes to Terms and Conditions</h2>
+        <p>We reserve the right to modify these terms and conditions at any time. Any changes will be posted on this page, and your continued use of EDucRESOURCE HUB after such changes have been made constitutes your acceptance of the new terms.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions or concerns about these terms and conditions, please contact us at support@educresourcehub.com.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">EduHome</a>
+          <p class="section-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+          <ul class="social-list">
+            <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#" class="social-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+          </ul>
+        </div>
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Our Link</p></li>
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#courses" class="footer-link">Courses</a></li>
+          <li><a href="#event" class="footer-link">Event</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Other Link</p></li>
+          <li><a href="#" class="footer-link">Instructor</a></li>
+          <li><a href="#" class="footer-link">FAQ</a></li>
+          <li><a href="#" class="footer-link">Event</a></li>
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Term & Condition</a></li>
+        </ul>
+        <div class="footer-list">
+          <p class="footer-list-title">Contacts</p>
+          <p class="footer-text">Feel free to contact us via phone or send us a message.</p>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <div class="contact-item-icon"><ion-icon name="call-outline"></ion-icon></div>
+              <a href="tel:+011234567890" class="footer-contact-link">+01 (123) 456 7890</a>
+            </li>
+            <li class="footer-contact-item">
+              <div class="contact-item-icon"><ion-icon name="mail-outline"></ion-icon></div>
+              <a href="mailto:info@eduhome.com" class="footer-contact-link">info@eduhome.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <div class="contact-item-icon"><ion-icon name="map-outline"></ion-icon></div>
+              <address class="footer-contact-link">1800 Abbot Kinney Blvd. Unit D & E Venice</address>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 <a href="#">EduHome</a>. All Rights Reserved | Designed by <a href="https://www.websitelayouts.com">Website Layouts</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS Link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicons Link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
